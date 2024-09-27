@@ -100,10 +100,6 @@ project_root/
 
 5. The DAG will run based on the schedule interval defined (default is daily)
 
-# Airflow Data Pipeline: CSV to S3 to Redshift
-
-[Previous sections remain unchanged]
-
 ## Expected Output
 
 When this project is fully set up and running correctly, you should expect the following outputs:
@@ -150,8 +146,6 @@ To verify the output:
 5. Review Airflow logs for detailed execution information.
 
 Note: The exact structure and content of the output data will depend on your specific transformation logic and input data. Adjust your expectations accordingly based on your implemented transformations and business logic.
-
-[Remaining sections stay the same]
 
 ## Monitoring and Troubleshooting
 
