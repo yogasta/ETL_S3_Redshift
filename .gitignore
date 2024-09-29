@@ -1,0 +1,5 @@
+
+*.log
+logs/dag_processor_manager/dag_processor_manager.log
+logs/scheduler/2024-09-27/sales_pipeline.py.log
+logs/scheduler/latest

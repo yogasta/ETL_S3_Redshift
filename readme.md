@@ -25,11 +25,6 @@ The pipeline follows these steps:
 - Python 3.7+
 - Apache Airflow 2.0+
 - AWS account (not set up yet)
-- Required Python packages (install via `pip install -r requirements.txt`):
-  - apache-airflow
-  - apache-airflow-providers-amazon
-  - pandas
-  - boto3
 
 ## Project Structure
 
@@ -55,32 +50,26 @@ project_root/
    git clone <repository-url>
    cd <project-directory>
    ```
-
-2. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Set up Airflow (if not already done):
+2. Set up Airflow (if not already done):
    ```
    export AIRFLOW_HOME=~/airflow
    airflow db init
    airflow users create --username admin --firstname YourName --lastname YourLastName --role Admin --email your@email.com
    ```
 
-4. Copy the DAG file to your Airflow DAGs folder:
+3. Copy the DAG file to your Airflow DAGs folder:
    ```
    cp dags/csv_to_s3_to_redshift_dag.py ~/airflow/dags/
    ```
 
-5. AWS Setup (Pending):
+4. AWS Setup (Pending):
    - Create an AWS account
    - Set up IAM user with appropriate permissions
    - Create an S3 bucket
    - Set up a Redshift cluster
    - Configure VPC and security groups as needed
 
-6. Configure Airflow connections for AWS and Redshift (via Airflow UI)
+5. Configure Airflow connections for AWS and Redshift (via Airflow UI)
 
 ## Running the Pipeline
 
