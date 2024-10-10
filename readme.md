@@ -48,11 +48,7 @@ project_root/
 
 ## Setup Instructions
 
-1. Clone this repository:
-   ```
-   git clone <repository-url>
-   cd <project-directory>
-   ```
+1. Clone this repository
 
 2. Set up your AWS resources:
    - Ensure you have an S3 bucket created
