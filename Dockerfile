@@ -18,6 +18,5 @@ RUN pip install --no-cache-dir \
     apache-airflow-providers-apache-hive \
     pandas \
     boto3 \
-    psycopg2-binary
-
-# The CMD is provided by the base image, no need to specify it here
+    psycopg2-binary \
+    apache-airflow[amazon]
