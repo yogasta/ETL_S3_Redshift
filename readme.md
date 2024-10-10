@@ -77,7 +77,7 @@ project_root/
 
 ## Running the Pipeline
 
-1. Access the Airflow UI at `http://localhost:8090` (you can modify the port, user and password in the dockerfile.)
+1. Access the Airflow UI at `http://localhost:8090` (you can modify the port, user and password in the docker-compose file.)
 
 2. Enable the DAG "csv_to_s3_to_redshift" in the Airflow UI
 
