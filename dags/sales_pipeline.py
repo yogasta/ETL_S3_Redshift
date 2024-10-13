@@ -58,7 +58,7 @@ for table in tables:
         task_id=f'create_{table}_table',
         sql=f"""
         CREATE TABLE IF NOT EXISTS {redshift_schema}.{table} (
-            {{{{ task_instance.xcom_pull(task_ids='transform_to_star_schema', key='table_definitions')['{table}'] }}}}
+            {{{{ task_instance.xcom_pull(task_ids='transform_to_star_schema')['table_definitions']['{table}'] }}}}
         );
         """,
         conn_id='redshift_default',
@@ -74,7 +74,7 @@ for table in tables:
     
     upload_to_s3_task = LocalFilesystemToS3Operator(
         task_id=f'upload_{table}_to_s3',
-        filename=f"{{{{ task_instance.xcom_pull(task_ids='transform_to_star_schema')['{table}'] }}}}",
+        filename=f"{{{{ task_instance.xcom_pull(task_ids='transform_to_star_schema')['table_files']['{table}'] }}}}",
         dest_key=f"{s3_prefix}/{table}.csv",
         dest_bucket=s3_bucket,
         aws_conn_id='aws_default',

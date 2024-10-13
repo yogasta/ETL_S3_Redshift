@@ -3,7 +3,7 @@ import numpy as np
 import os
 from airflow.models import TaskInstance
 
-def transform_to_star_schema_and_save(input_file: str, output_dir: str, ti: TaskInstance):
+def transform_to_star_schema_and_save(input_file: str, output_dir: str):
     # Read the CSV file
     df = pd.read_csv(input_file)
     
@@ -106,8 +106,8 @@ def transform_to_star_schema_and_save(input_file: str, output_dir: str, ti: Task
                 column_defs.append(f"{col} VARCHAR(255)")  # Default to VARCHAR for unknown types
         table_definitions[table_name] = ", ".join(column_defs)
     
-    # Push table definitions to XCom
-    ti.xcom_push(key='table_definitions', value=table_definitions)
-    
-    # Return the file paths of the saved CSV files
-    return table_files
+    # Return the file paths and definitions of the saved CSV files
+    return {
+        'table_files': table_files,
+        'table_definitions': table_definitions
+    }

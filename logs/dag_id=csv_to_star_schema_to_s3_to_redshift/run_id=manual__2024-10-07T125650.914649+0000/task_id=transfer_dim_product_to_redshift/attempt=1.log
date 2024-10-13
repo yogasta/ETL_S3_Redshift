@@ -1,0 +1,36 @@
+[2024-10-07T12:57:14.628+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-07T12:57:14.638+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_star_schema_to_s3_to_redshift.transfer_dim_product_to_redshift manual__2024-10-07T12:56:50.914649+00:00 [queued]>
+[2024-10-07T12:57:14.643+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_star_schema_to_s3_to_redshift.transfer_dim_product_to_redshift manual__2024-10-07T12:56:50.914649+00:00 [queued]>
+[2024-10-07T12:57:14.644+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-07T12:57:14.653+0000] {taskinstance.py:2888} INFO - Executing <Task(S3ToRedshiftOperator): transfer_dim_product_to_redshift> on 2024-10-07 12:56:50.914649+00:00
+[2024-10-07T12:57:14.658+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=10925) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-07T12:57:14.659+0000] {standard_task_runner.py:72} INFO - Started process 10937 to run task
+[2024-10-07T12:57:14.659+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'csv_to_star_schema_to_s3_to_redshift', 'transfer_dim_product_to_redshift', 'manual__2024-10-07T12:56:50.914649+00:00', '--job-id', '135', '--raw', '--subdir', 'DAGS_FOLDER/sales_pipeline.py', '--cfg-path', '/tmp/tmpiltyzgc9']
+[2024-10-07T12:57:14.660+0000] {standard_task_runner.py:105} INFO - Job 135: Subtask transfer_dim_product_to_redshift
+[2024-10-07T12:57:14.670+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-07T12:57:14.686+0000] {task_command.py:467} INFO - Running <TaskInstance: csv_to_star_schema_to_s3_to_redshift.transfer_dim_product_to_redshift manual__2024-10-07T12:56:50.914649+00:00 [running]> on host 66045655c750
+[2024-10-07T12:57:14.733+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_star_schema_to_s3_to_redshift' AIRFLOW_CTX_TASK_ID='transfer_dim_product_to_redshift' AIRFLOW_CTX_EXECUTION_DATE='2024-10-07T12:56:50.914649+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-07T12:56:50.914649+00:00'
+[2024-10-07T12:57:14.734+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-07T12:57:14.747+0000] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-07T12:57:14.751+0000] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-07T12:57:14.752+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-07T12:57:14.758+0000] {s3_to_redshift.py:194} INFO - Executing COPY command...
+[2024-10-07T12:57:14.763+0000] {base.py:84} INFO - Retrieving connection 'redshift_default'
+[2024-10-07T12:57:14.767+0000] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-07T12:57:14.768+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-07T12:57:15.947+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2024-10-07T12:57:17.785+0000] {sql.py:509} INFO - Running statement: 
+                    COPY etl_data.dim_product 
+                    FROM 's3://finalprojectdibimbing/data/dim_product.csv'
+                    credentials
+                    'aws_access_key_id=AKIATL6XMQFJ5UANYFMX;aws_secret_access_key=***'
+                    
+                    CSV
+			IGNOREHEADER 1;
+        , parameters: None
+[2024-10-07T12:57:19.717+0000] {s3_to_redshift.py:199} INFO - COPY command complete...
+[2024-10-07T12:57:19.721+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-07T12:57:19.722+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=csv_to_star_schema_to_s3_to_redshift, task_id=transfer_dim_product_to_redshift, run_id=manual__2024-10-07T12:56:50.914649+00:00, execution_date=20241007T125650, start_date=20241007T125714, end_date=20241007T125719
+[2024-10-07T12:57:19.758+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-07T12:57:19.765+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-07T12:57:19.769+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,20 @@
+[2024-10-10T18:08:35.579+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-10T18:08:35.588+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: csv_to_star_schema_to_s3_to_redshift.upload_dim_customer_to_s3 manual__2024-10-10T18:07:53.210079+00:00 [queued]>
+[2024-10-10T18:08:35.593+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: csv_to_star_schema_to_s3_to_redshift.upload_dim_customer_to_s3 manual__2024-10-10T18:07:53.210079+00:00 [queued]>
+[2024-10-10T18:08:35.594+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-10T18:08:35.603+0000] {taskinstance.py:2888} INFO - Executing <Task(LocalFilesystemToS3Operator): upload_dim_customer_to_s3> on 2024-10-10 18:07:53.210079+00:00
+[2024-10-10T18:08:35.608+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=313) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-10T18:08:35.609+0000] {standard_task_runner.py:72} INFO - Started process 315 to run task
+[2024-10-10T18:08:35.608+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'csv_to_star_schema_to_s3_to_redshift', 'upload_dim_customer_to_s3', 'manual__2024-10-10T18:07:53.210079+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/sales_pipeline.py', '--cfg-path', '/tmp/tmpb_ewb6rp']
+[2024-10-10T18:08:35.610+0000] {standard_task_runner.py:105} INFO - Job 169: Subtask upload_dim_customer_to_s3
+[2024-10-10T18:08:35.620+0000] {logging_mixin.py:190} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-10T18:08:35.639+0000] {task_command.py:467} INFO - Running <TaskInstance: csv_to_star_schema_to_s3_to_redshift.upload_dim_customer_to_s3 manual__2024-10-10T18:07:53.210079+00:00 [running]> on host 66045655c750
+[2024-10-10T18:08:35.690+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='csv_to_star_schema_to_s3_to_redshift' AIRFLOW_CTX_TASK_ID='upload_dim_customer_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2024-10-10T18:07:53.210079+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-10T18:07:53.210079+00:00'
+[2024-10-10T18:08:35.691+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-10T18:08:35.705+0000] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2024-10-10T18:08:35.706+0000] {connection_wrapper.py:388} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2024-10-10T18:08:37.245+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-10T18:08:37.245+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=csv_to_star_schema_to_s3_to_redshift, task_id=upload_dim_customer_to_s3, run_id=manual__2024-10-10T18:07:53.210079+00:00, execution_date=20241010T180753, start_date=20241010T180835, end_date=20241010T180837
+[2024-10-10T18:08:37.269+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-10T18:08:37.282+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-10T18:08:37.286+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

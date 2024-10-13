@@ -1,0 +1,95 @@
+[2024-10-05T10:05:11.146+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-05T10:05:11.150+0000] {processor.py:186} INFO - Started process (PID=1195) to work on /opt/airflow/dags/test.py
+[2024-10-05T10:05:11.150+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-10-05T10:05:11.151+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:11.151+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-10-05T10:05:11.346+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:11.346+0000] {configuration.py:1058} WARNING - section/key [core/airflow_home] not found in config
+[2024-10-05T10:05:11.351+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:11.347+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 34, in <module>
+    airflow_home = conf.get('core', 'AIRFLOW_HOME')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py", line 1060, in get
+    raise AirflowConfigException(f"section/key [{section}/{key}] not found in config")
+airflow.exceptions.AirflowConfigException: section/key [core/airflow_home] not found in config
+[2024-10-05T10:05:11.352+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-10-05T10:05:11.365+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.221 seconds
+[2024-10-05T10:05:41.570+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-05T10:05:41.573+0000] {processor.py:186} INFO - Started process (PID=1207) to work on /opt/airflow/dags/test.py
+[2024-10-05T10:05:41.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-10-05T10:05:41.575+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:41.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-10-05T10:05:41.745+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:41.745+0000] {configuration.py:1058} WARNING - section/key [core/airflow_home] not found in config
+[2024-10-05T10:05:41.753+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:05:41.745+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 34, in <module>
+    airflow_home = conf.get('core', 'AIRFLOW_HOME')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py", line 1060, in get
+    raise AirflowConfigException(f"section/key [{section}/{key}] not found in config")
+airflow.exceptions.AirflowConfigException: section/key [core/airflow_home] not found in config
+[2024-10-05T10:05:41.754+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-10-05T10:05:41.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.198 seconds
+[2024-10-05T10:06:33.411+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-05T10:06:33.415+0000] {processor.py:186} INFO - Started process (PID=184) to work on /opt/airflow/dags/test.py
+[2024-10-05T10:06:33.416+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-10-05T10:06:33.417+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:06:33.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-10-05T10:06:34.353+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:06:34.352+0000] {configuration.py:1058} WARNING - section/key [core/airflow_home] not found in config
+[2024-10-05T10:06:34.355+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:06:34.353+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 34, in <module>
+    airflow_home = conf.get('core', 'AIRFLOW_HOME')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py", line 1060, in get
+    raise AirflowConfigException(f"section/key [{section}/{key}] not found in config")
+airflow.exceptions.AirflowConfigException: section/key [core/airflow_home] not found in config
+[2024-10-05T10:06:34.356+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-10-05T10:06:34.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.965 seconds
+[2024-10-05T10:07:04.630+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-05T10:07:04.634+0000] {processor.py:186} INFO - Started process (PID=196) to work on /opt/airflow/dags/test.py
+[2024-10-05T10:07:04.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-10-05T10:07:04.636+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:04.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-10-05T10:07:04.955+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:04.955+0000] {configuration.py:1058} WARNING - section/key [core/airflow_home] not found in config
+[2024-10-05T10:07:04.961+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:04.956+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 34, in <module>
+    airflow_home = conf.get('core', 'AIRFLOW_HOME')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py", line 1060, in get
+    raise AirflowConfigException(f"section/key [{section}/{key}] not found in config")
+airflow.exceptions.AirflowConfigException: section/key [core/airflow_home] not found in config
+[2024-10-05T10:07:04.963+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-10-05T10:07:04.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.348 seconds
+[2024-10-05T10:07:35.195+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-05T10:07:35.199+0000] {processor.py:186} INFO - Started process (PID=208) to work on /opt/airflow/dags/test.py
+[2024-10-05T10:07:35.200+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test.py for tasks to queue
+[2024-10-05T10:07:35.201+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:35.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test.py
+[2024-10-05T10:07:35.599+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:35.599+0000] {configuration.py:1058} WARNING - section/key [core/airflow_home] not found in config
+[2024-10-05T10:07:35.605+0000] {logging_mixin.py:190} INFO - [2024-10-05T10:07:35.600+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test.py", line 34, in <module>
+    airflow_home = conf.get('core', 'AIRFLOW_HOME')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/configuration.py", line 1060, in get
+    raise AirflowConfigException(f"section/key [{section}/{key}] not found in config")
+airflow.exceptions.AirflowConfigException: section/key [core/airflow_home] not found in config
+[2024-10-05T10:07:35.606+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test.py
+[2024-10-05T10:07:35.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test.py took 0.424 seconds
