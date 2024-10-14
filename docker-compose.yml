@@ -32,15 +32,14 @@ services:
     entrypoint: >
       /bin/bash -c "
       airflow db init &&
-      airflow users create
-        --username ${AIRFLOW_WWW_USER_USERNAME:-admin}
-        --password ${AIRFLOW_WWW_USER_PASSWORD:-secure_password}
-        --firstname Admin
-        --lastname User
-        --role Admin
-        --email admin@example.com
+      airflow users create \
+      --username \"${AIRFLOW_WWW_USER_USERNAME:-admin}\" \
+      --password \"${AIRFLOW_WWW_USER_PASSWORD:-secure_password}\" \
+      --firstname Admin \
+      --lastname User \
+      --role Admin \
+      --email admin@example.com
       "
-
   airflow-webserver:
     <<: *airflow-common
     ports:
