@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-from airflow.models import TaskInstance
 
 def transform_to_star_schema_and_save(input_file: str, output_dir: str):
     # Read the CSV file
