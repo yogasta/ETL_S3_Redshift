@@ -19,7 +19,6 @@ RUN pip install --no-cache-dir \
     pandas \
     boto3 \
     psycopg2-binary \
-    apache-airflow[amazon] \
-    airflow[postgres]==2.3.4
+    apache-airflow[amazon]
 
-RUN airflow db upgrade
+RUN airflow db init

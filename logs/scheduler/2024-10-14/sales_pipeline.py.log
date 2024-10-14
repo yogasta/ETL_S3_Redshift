@@ -1,0 +1,80 @@
+[2024-10-14T13:29:32.782+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:29:32.786+0000] {processor.py:186} INFO - Started process (PID=181) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:29:32.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:29:32.788+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:29:32.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:29:33.217+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:29:33.232+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:29:33.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:29:33.247+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:29:33.247+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:29:33.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.480 seconds
+[2024-10-14T13:30:03.448+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:30:03.451+0000] {processor.py:186} INFO - Started process (PID=193) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:03.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:30:03.453+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:03.453+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:03.656+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:03.669+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:03.669+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:30:03.682+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:03.682+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:30:03.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.247 seconds
+[2024-10-14T13:30:33.845+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:30:33.848+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:33.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:30:33.850+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:33.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:34.116+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:30:34.129+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:34.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:30:34.139+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:30:34.139+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:30:34.151+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.307 seconds
+[2024-10-14T13:31:04.319+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:31:04.322+0000] {processor.py:186} INFO - Started process (PID=217) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:04.322+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:31:04.323+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:04.323+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:04.498+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:04.510+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:04.509+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:31:04.521+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:04.521+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:31:04.540+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.223 seconds
+[2024-10-14T13:31:34.716+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:31:34.720+0000] {processor.py:186} INFO - Started process (PID=229) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:34.720+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:31:34.721+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:34.721+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:34.912+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:31:34.925+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:34.925+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:31:34.938+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:31:34.937+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:31:34.952+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.238 seconds
+[2024-10-14T13:32:05.115+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:32:05.119+0000] {processor.py:186} INFO - Started process (PID=235) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:05.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:32:05.120+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:05.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:05.297+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:05.309+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:05.309+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:32:05.321+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:05.321+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:32:05.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.220 seconds
+[2024-10-14T13:32:35.502+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:32:35.505+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:35.506+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:32:35.507+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:35.507+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:35.686+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:32:35.697+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:35.697+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:32:35.709+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:32:35.709+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:32:35.722+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.221 seconds
+[2024-10-14T13:33:05.902+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:33:05.906+0000] {processor.py:186} INFO - Started process (PID=259) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:05.906+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:33:05.908+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:05.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:06.076+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:06.088+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:06.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:33:06.099+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:06.099+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:33:06.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.210 seconds
+[2024-10-14T13:33:36.262+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:33:36.265+0000] {processor.py:186} INFO - Started process (PID=271) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:36.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:33:36.267+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:36.266+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:36.435+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:33:36.446+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:36.446+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:33:36.457+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:33:36.456+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:33:36.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.208 seconds
+[2024-10-14T13:34:06.636+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-10-14T13:34:06.640+0000] {processor.py:186} INFO - Started process (PID=283) to work on /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:34:06.640+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/sales_pipeline.py for tasks to queue
+[2024-10-14T13:34:06.642+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:34:06.642+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:34:06.818+0000] {processor.py:925} INFO - DAG(s) 'csv_to_star_schema_to_s3_to_redshift' retrieved from /opt/airflow/dags/sales_pipeline.py
+[2024-10-14T13:34:06.830+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:34:06.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-14T13:34:06.841+0000] {logging_mixin.py:190} INFO - [2024-10-14T13:34:06.841+0000] {dag.py:4180} INFO - Setting next_dagrun for csv_to_star_schema_to_s3_to_redshift to 2024-09-27 00:00:00+00:00, run_after=2024-10-27 00:00:00+00:00
+[2024-10-14T13:34:06.854+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/sales_pipeline.py took 0.220 seconds
